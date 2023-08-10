@@ -12,3 +12,5 @@ steps:
     plugins:
       - shellcheck#v1.3.0:
           files: hooks/**
+
+  - command: yarn install
