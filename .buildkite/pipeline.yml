@@ -1,4 +1,11 @@
 steps:
+  - label: ":hammer: Tests"
+    command: echo $USER $PASSWORD
+    plugins:
+      - docker#v3.5.0:
+          user: root
+          image: ubuntu
+
   - label: "🤡 :hammer:"
     plugins:
       - plugin-tester#v1.1.0: ~
